@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
  namespace: production
- name: pesbuk
+ name: pesbuk-prod
  labels: 
    app: sosmed-pesbuk
 spec:
