@@ -16,7 +16,7 @@ spec:
    spec: 
      containers:
      - name: pesbuk
-       image: maximalyono/pesbuk-alpine:16.0
+       image: maximalyono/pesbuk-ci:BUILD_NUMBER
        ports:
        - containerPort: 80
 
