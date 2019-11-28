@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: pesbuk
+ labels: 
+   app: sosmed-pesbuk
+spec:
+ replicas: 3
+ selector: 
+   matchLabels:
+     app: pesbuk
+ template:
+   metadata:
+     labels:
+       app: pesbuk
+   spec: 
+     containers:
+     - name: pesbuk
+       image: maximalyono/pesbuk-alpine:16.0
+       ports:
+       - containerPort: 80
+
