@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <h1>Welcome, Selamat datang di Pesbuker</h1>
-                        <p>Bergabunglah bersama miliaraan orang lainnya...</p>
+                        <p>Bergabunglah bersama bermiliaraan orang lainnya...</p>
                     </div>
                     <div class="col-md-4">
                         <a href="login.php" class="btn btn-secondary">Masuk</a>
