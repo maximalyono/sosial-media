@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ namespace: staging
+ name: pesbuk-stage
+ labels: 
+   app: sosmed-pesbuk
+spec:
+ replicas: 3
+ selector: 
+   matchLabels:
+     app: pesbuk
+ template:
+   metadata:
+     labels:
+       app: pesbuk
+   spec: 
+     containers:
+     - name: pesbuk
+       image: maximalyono/pesbuk-ci-staging:BUILD_NUMBER
+       ports:
+       - containerPort: 80
+
